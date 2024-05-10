@@ -3,7 +3,9 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import HomeScreen from './screens/CategoriesScreen.tsx';
 import SongListScreen from './screens/LessonsScreen.tsx';
+import NewLoginScreen from './screens/NewLoginScreen.tsx';
 import {I18nManager, Text, View} from 'react-native';
+import ConfirmOTPScreen from './screens/ConfirmOTPScreen.tsx';
 
 const Stack = createStackNavigator();
 
@@ -23,6 +25,8 @@ const App: React.FC = () => {
           component={SongListScreen}
           options={{headerShown: false}}
         />
+        <Stack.Screen name="Login" component={NewLoginScreen} />
+        <Stack.Screen name="ConfirmOTP" component={ConfirmOTPScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

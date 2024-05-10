@@ -13,6 +13,7 @@ const LessonList: React.FC<LessonsListProps> = ({lessons}) => {
       title={item.name}
       subtitle=""
       image="https://manitou.org.il/joomlatools-files/docman-images/shiurim.audio.jpg"
+      locked={!item.link}
       onClick={() => {
         console.log('test');
       }}

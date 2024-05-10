@@ -61,6 +61,11 @@
                 android:value="androidx.startup" />
         </provider>
 
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:directBootAware="true"
+            android:exported="false" />
+
         <meta-data
             android:name="com.facebook.soloader.enabled"
             android:value="false" />

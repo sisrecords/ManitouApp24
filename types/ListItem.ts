@@ -3,5 +3,6 @@ export interface IListItem {
   subtitle: string;
   image: string;
   extraData: string;
+  locked?: boolean;
   onClick: () => void;
 }

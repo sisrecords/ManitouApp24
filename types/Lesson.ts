@@ -3,4 +3,5 @@ export interface Lesson {
   name: string;
   transcript: string;
   isPremium: boolean;
+  link: string;
 }
